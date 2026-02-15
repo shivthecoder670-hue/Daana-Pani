@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daana Pani | Village Ambience Restaurant & Function Hall</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    .mobile-menu-btn { display: none; background: none; border: none; font-size: 2rem; cursor: pointer; padding: 0.5rem; }
+    @media (max-width: 768px) {
+      .navbar { flex-wrap: wrap; justify-content: space-between; padding: 1rem; align-items: center; }
+      .mobile-menu-btn { display: block; }
+      .navbar nav { display: none; width: 100%; flex-direction: column; text-align: center; margin-top: 1rem; background: #fff; z-index: 999; }
+      .navbar nav.active { display: flex; }
+      .navbar nav a { display: block; padding: 1rem 0; border-top: 1px solid #eee; font-size: 1.1rem; }
+      .navbar .btn { margin-top: 1rem; display: inline-block; width: 100%; padding: 0.8rem; }
+
+      .hero-content { padding: 2rem 1rem; }
+      .hero-content h1 { font-size: 2rem; line-height: 1.2; }
+      .hero-content h1 br { display: none; }
+      .intro-section { flex-direction: column; text-align: center; padding: 2rem 1rem; }
+      .intro-text { margin-top: 1.5rem; }
+      .services, .visual-menu { flex-direction: column; gap: 1.5rem; padding: 1rem; }
+      .card, .visual-card { width: 100%; margin: 0; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">DAANA PANI</div>
+  <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Village Ambience<br>Restaurant & Function Hall</h1>
+    <p>Pure Village Taste. Grand Celebrations.</p>
+    <div class="hero-buttons">
+      <a href="resturant.html" class="btn">Reserve Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- Problem/Solution Section -->
+<section class="problem-solution">
+  <h2>About Daana Pani</h2>
+  <p>
+    Inspired by village traditions, Daana Pani brings authentic flavors,
+    cultural ambience, and premium celebration spaces together.
+  </p>
+</section>
+
+<!-- Introductory Section -->
+<section class="intro-section">
+  <div class="intro-image">
+    <img src="images/Front.jpeg.jpeg" alt="Daana Pani Experience">
+  </div>
+  <div class="intro-text">
+    <h2>Experience Authenticity</h2>
+    <p>Authentic desi food served in a soulful village ambience. Escape the city noise and enjoy a premium dining experience.</p>
+    <br>
+    <a href="contact.html" class="btn-outline">Contact Us</a>
+  </div>
+</section>
+
+<!-- Key Details -->
+<section class="services">
+  <div class="card">
+    <h3>Banquet Type</h3>
+    <p>AC & Non AC</p>
+  </div>
+  <div class="card">
+    <h3>Dining Options</h3>
+    <p>Dinner & Lunch</p>
+  </div>
+  <div class="card">
+    <h3>Amenities</h3>
+    <p>Wheel Chair Accessible Entrance And Exit</p>
+  </div>
+  <div class="card">
+    <h3>Serves</h3>
+    <p>Pure Veg</p>
+  </div>
+</section>
+
+<!-- Offerings Directory (Visual Menu) -->
+<section class="visual-menu">
+  <div class="visual-card food">
+    <h3>🍽 Village Theme Restaurant</h3>
+    <p>Authentic desi food served in a soulful village ambience.</p>
+  </div>
+  <div class="visual-card function">
+    <h3>💍 Function Hall</h3>
+    <p>Weddings, engagements, anniversaries & grand events.</p>
+  </div>
+  <div class="visual-card celebration">
+    <h3>🎉 Celebrations</h3>
+    <p>Birthdays, receptions, corporate & special occasions.</p>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>What Our Guests Say</h2>
+  <div class="review">
+    ⭐⭐⭐⭐⭐ <br>
+    “A perfect blend of tradition and luxury.”
+  </div>
+</section>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>

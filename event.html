@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Daana Pani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    .mobile-menu-btn { display: none; background: none; border: none; font-size: 2rem; cursor: pointer; padding: 0.5rem; }
+    @media (max-width: 768px) {
+      .navbar { flex-wrap: wrap; justify-content: space-between; padding: 1rem; align-items: center; }
+      .mobile-menu-btn { display: block; }
+      .navbar nav { display: none; width: 100%; flex-direction: column; text-align: center; margin-top: 1rem; background: #fff; z-index: 999; }
+      .navbar nav.active { display: flex; }
+      .navbar nav a { display: block; padding: 1rem 0; border-top: 1px solid #eee; font-size: 1.1rem; }
+      .navbar .btn { margin-top: 1rem; display: inline-block; width: 100%; padding: 0.8rem; }
+
+      .page-hero { padding: 3rem 1rem; text-align: center; }
+      .services { flex-direction: column; gap: 1rem; padding: 1rem; }
+      .decor-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+      .reservation-form input, .reservation-form select, .reservation-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
+      .reservation-form button { width: 100%; padding: 1rem; font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">DAANA PANI</div>
+  <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Function Hall & Events</h1>
+  <p>Celebrate your moments with grandeur</p>
+</section>
+
+<section class="services">
+  <div class="card">💍 Weddings</div>
+  <div class="card">💑 Engagements</div>
+  <div class="card">🎂 Anniversaries</div>
+  <div class="card">🏢 Corporate Events</div>
+</section>
+
+<!-- DECORATION THEMES -->
+<section class="decorations">
+  <h2>Decoration Themes</h2>
+
+  <div class="decor-grid">
+    <div class="decor-card">🌸 Traditional Floral</div>
+    <div class="decor-card">👑 Royal Wedding</div>
+    <div class="decor-card">✨ Minimal Elegant</div>
+    <div class="decor-card">🌿 Village Heritage</div>
+  </div>
+</section>
+
+<!-- EVENT ENQUIRY -->
+<section class="reservation">
+  <h2>Event Enquiry</h2>
+  <p>Tell us about your celebration</p>
+
+  <form class="reservation-form">
+    <input type="text" id="event-name" placeholder="Full Name" required>
+    <input type="tel" id="event-phone" placeholder="Contact Number" required>
+     <label for="reservation-date">Preferred Dining Date:</label>
+<input type="date" 
+       id="reservation-date" 
+       name="reservation_date" 
+       aria-describedby="date-hint"
+       required>
+<p id="date-hint">Please select a date within the next 30 days.</p>
+<label for="event-type">Event Type:</label>
+    <select id="event-type" required>
+      <option value="">Select an option</option>
+      <option>Wedding</option>
+      <option>Engagement</option>
+      <option>Anniversary</option>
+      <option>Corporate</option>
+    </select>
+
+      <label for="guest-count">Expected Number of Guests:</label>
+
+    <select id="guest-count" required>
+      <option value="">Expected Guests</option>
+      <option>50–100</option>
+      <option>100–300</option>
+      <option>300+</option>
+    </select>
+
+    <textarea id="event-notes" placeholder="Special Requirements"></textarea>
+    <button type="button" class="btn" onclick="sendEventEnquiry()">Send Enquiry</button>
+
+  </form>
+</section>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+
+
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>

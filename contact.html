@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Daana Pani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/Logo.jpg" type="image/jpeg">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; display: block; }
+    .mobile-menu-btn { display: none; background: none; border: none; font-size: 2rem; cursor: pointer; padding: 0.5rem; }
+    @media (max-width: 768px) {
+      .navbar { flex-wrap: wrap; justify-content: space-between; padding: 1rem; align-items: center; }
+      .mobile-menu-btn { display: block; }
+      .navbar nav { display: none; width: 100%; flex-direction: column; text-align: center; margin-top: 1rem; background: #fff; z-index: 999; }
+      .navbar nav.active { display: flex; }
+      .navbar nav a { display: block; padding: 1rem 0; border-top: 1px solid #eee; font-size: 1.1rem; }
+      .navbar .btn { margin-top: 1rem; display: inline-block; width: 100%; padding: 0.8rem; }
+
+      .page-hero { padding: 3rem 1rem; text-align: center; }
+      .about { flex-direction: column; padding: 1rem; }
+      .form { width: 100%; margin-bottom: 2rem; }
+      .form input, .form textarea { width: 100%; box-sizing: border-box; padding: 0.8rem; margin-bottom: 1rem; font-size: 1rem; }
+      .form button { width: 100%; padding: 1rem; font-size: 1.1rem; }
+      .map-section iframe { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">DAANA PANI</div>
+  <button class="mobile-menu-btn" aria-label="Toggle navigation">☰</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="resturant.html">Restaurant</a>
+    <a href="event.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="btn">Contact</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you</p>
+</section>
+
+<section class="about">
+  <form class="form">
+    <input type="text" id="contact-name" placeholder="Your Name" required>
+    <input type="email" id="contact-email" placeholder="Email" required>
+    <textarea id="contact-message" placeholder="Your Message"></textarea>
+    <button type="button" class="btn" onclick="sendContactEnquiry()">Send Enquiry</button>
+
+  </form>
+
+  <p><strong>Phone:</strong> +91 7483567640</p>
+  <p><strong>Location:</strong> Near Bidar University, Near Chandpaure Bharath Petroleam, Halhalli K, Bidar-585415, Karnataka</p>
+</section>
+<section class="map-section">
+  <h2>Find Us</h2>
+
+  <iframe
+    src="https://maps.google.com/maps?q=Daana+Pani+Bidar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="350"
+    title="Google Map Location of Daana Pani"
+    allowfullscreen>
+  </iframe>
+
+  <a class="btn-outline map-btn"
+     href="https://maps.app.goo.gl/59BD6tATxZqKxvNR9"
+     target="_blank"
+     rel="noopener noreferrer">
+     📍 Open in Google Maps
+  </a>
+</section>
+<a href="https://wa.me/917483567640"
+   class="floating-whatsapp"
+   rel="noopener noreferrer"
+   target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp"></a>
+
+
+
+<footer>
+  <p>© 2026 Daana Pani | All Rights Reserved</p>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>
